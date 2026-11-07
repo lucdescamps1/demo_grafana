@@ -1,0 +1,15 @@
+apiVersion: 1
+datasources:
+  - name: InfluxDB-Flux
+    uid: influxdb-ims
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    isDefault: true
+    jsonData:
+      version: Flux
+      organization: demo
+      defaultBucket: bearings
+      tlsSkipVerify: true
+    secureJsonData:
+      token: my-super-token
